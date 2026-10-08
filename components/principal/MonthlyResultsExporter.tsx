@@ -319,12 +319,7 @@ export default function MonthlyResultsExporter({ classes, settings, users }: Mon
 
         setIsWithdrawing(true);
         const updates: Record<string, any> = {};
-        const principalId = classes.find(c => selectedClassIds.includes(c.id))?.principalId;
-        if (!principalId) {
-            alert('خطأ: لم يتم العثور على معرّف المدير.');
-            setIsWithdrawing(false);
-            return;
-        }
+        const principalId = classes.find(c => selectedClassIds.includes(c.id))?.principalId || (settings as any).principalId || 'principal_al_hamza';
 
         for (const { student } of studentsToWithdraw) {
             updates[`/published_monthly_results/${principalId}/${student.id}/${selectedResult.key}`] = null;
@@ -354,12 +349,7 @@ export default function MonthlyResultsExporter({ classes, settings, users }: Mon
         setIsPublishing(true);
         const updates: Record<string, any> = {};
         
-        const principalId = classes.find(c => selectedClassIds.includes(c.id))?.principalId;
-        if (!principalId) {
-            alert('خطأ: لم يتم العثور على معرّف المدير.');
-            setIsPublishing(false);
-            return;
-        }
+        const principalId = classes.find(c => selectedClassIds.includes(c.id))?.principalId || (settings as any).principalId || 'principal_al_hamza';
 
         const publishedAt = new Date().toISOString();
         
