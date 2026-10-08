@@ -80,7 +80,7 @@
 
       // Register sw for direct static hosting support if available
       if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) {
-        navigator.serviceWorker.register('/sw.js').catch(function(err) {
+        navigator.serviceWorker.register('./sw.js').catch(function(err) {
           console.warn('SW registration info:', err);
         });
       }
@@ -100,7 +100,7 @@
       }
       @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
     </style>
-  <link rel="stylesheet" href="/index.css">
+  <link rel="stylesheet" href="./index.css">
 </head>
   <body>
     <div id="app-loader">
@@ -117,6 +117,6 @@
         }
       };
     </script>
-    <script type="module" src="/index.tsx"></script>
+    <script type="module" src="./index.tsx"></script>
   </body>
 </html>
