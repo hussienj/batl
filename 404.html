@@ -9,21 +9,7 @@
     <title>متوسطة بطل خيبر</title>  
     <meta name="google-site-verification" content="DqVnUTHGoteKNHzZei8hgfPZyw7BDBpzY0ZXLPkNgrQ" />
 
-    <!-- GH_PAGES_REDIRECT_START -->
-    <script>
-      (function() {
-        var isDev = location.hostname === 'localhost' || location.hostname === '127.0.0.1' || location.hostname.indexOf('run.app') !== -1;
-        if (!isDev) {
-          var p = location.pathname;
-          // If viewing root on GitHub Pages without /docs/ or /dist/
-          if (!p.includes('/docs/') && !p.includes('/dist/')) {
-            var target = p.endsWith('/') ? p + 'docs/' : p + '/docs/';
-            window.location.replace(target + location.search + location.hash);
-          }
-        }
-      })();
-    </script>
-    <!-- GH_PAGES_REDIRECT_END -->
+    
     
     <!-- Tailwind CSS CDN for instant styling support in raw/static host environments -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -49,22 +35,7 @@
 
     <!-- ES Module Shims & Import Map for Direct Browser Execution Support -->
     <script async src="https://ga.jspm.io/npm:es-module-shims@1.10.1/dist/es-module-shims.js"></script>
-    <script type="importmap">
-    {
-      "imports": {
-        "react": "https://esm.sh/react@19.2.3",
-        "react/": "https://esm.sh/react@19.2.3/",
-        "react-dom": "https://esm.sh/react-dom@19.2.3",
-        "react-dom/": "https://esm.sh/react-dom@19.2.3/",
-        "react-dom/client": "https://esm.sh/react-dom@19.2.3/client",
-        "lucide-react": "https://esm.sh/lucide-react@0.562.0",
-        "@dnd-kit/core": "https://esm.sh/@dnd-kit/core@6.3.1",
-        "@google/genai": "https://esm.sh/@google/genai@1.34.0",
-        "html5-qrcode": "https://esm.sh/html5-qrcode@2.3.8",
-        "uuid": "https://esm.sh/uuid@13.0.0"
-      }
-    }
-    </script>
+
 
     <script>
       if (typeof window !== 'undefined') {
@@ -118,7 +89,24 @@
       }
       @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
     </style>
-  <link rel="stylesheet" href="./index.css">
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@19.2.3",
+        "react/": "https://esm.sh/react@19.2.3/",
+        "react-dom": "https://esm.sh/react-dom@19.2.3",
+        "react-dom/": "https://esm.sh/react-dom@19.2.3/",
+        "react-dom/client": "https://esm.sh/react-dom@19.2.3/client",
+        "lucide-react": "https://esm.sh/lucide-react@0.562.0",
+        "@dnd-kit/core": "https://esm.sh/@dnd-kit/core@6.3.1",
+        "@google/genai": "https://esm.sh/@google/genai@1.34.0",
+        "html5-qrcode": "https://esm.sh/html5-qrcode@2.3.8",
+        "uuid": "https://esm.sh/uuid@13.0.0"
+      }
+    }
+    </script>
+  <script type="module" crossorigin src="./assets/index-DA9dCxoD.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-Bqt32fSy.css">
 </head>
   <body>
     <div id="app-loader">
@@ -135,6 +123,5 @@
         }
       };
     </script>
-    <script type="module" src="./index.tsx"></script>
   </body>
 </html>
