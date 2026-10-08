@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Cairo', system-ui, -apple-system, sans-serif;
+    background-color: #f8fafc;
+    margin: 0;
+    padding: 0;
+  }
+}
